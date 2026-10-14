@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/afnanm25/Kindy-disease-Classification
+Author: afnanm25
+Author-email: your_email@gmail.com
+Project-URL: Bug Tracker, https://github.com/afnanm25/Kindy-disease-Classification/issues
+
+# Kindy-disease-Classification
+This is a Deep learning project for kidney disease Classification.
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/afnanm25/Kindy-disease-Classification
+```
+### step 01- create a conda environments after opening the repository
+
+```bash
+conda create -n environment_name python=3.8 -y 
+
+```bash
+conda activate environment_name 
+```
+### step 02 install the requirments
+```bash
+python -m pip install -r requirements.txt
