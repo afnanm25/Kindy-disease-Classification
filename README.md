@@ -1,6 +1,20 @@
 # Kindy-disease-Classification
 This is a Deep learning project for kidney disease Classification.
-How to Run?
+# How to Run?
+
+## Workflows
+
+1. Update `config/config.yaml`
+2. Update `secrets.yaml` [Optional]
+3. Update `params.yaml`
+4. Update the entity (`src/cnnClassifier/entity/config_entity.py`)
+5. Update the configuration manager (`src/cnnClassifier/config/configuration.py`)
+6. Update the components (`src/cnnClassifier/components/`)
+7. Update the pipeline (`src/cnnClassifier/pipeline/`)
+8. Update `main.py`
+9. Update `dvc.yaml`
+10. app.py
+
 ### STEPS:
 
 Clone the repository
