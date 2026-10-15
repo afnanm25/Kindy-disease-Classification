@@ -1,0 +1,4 @@
+artifacts/
+*.log
+.vscode/
+__pycache__/

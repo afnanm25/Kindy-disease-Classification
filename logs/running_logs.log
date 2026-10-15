@@ -1,1 +1,401 @@
 [2026-10-14 11:20:18,301: INFO: main: welcome to our project!]
+[2026-10-14 16:49:02,233: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 16:49:02,233: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 16:49:02,233: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 16:49:02,233: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\utils\common.py", line 32, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\utils\common.py", line 34, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-10-14 16:50:36,798: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 16:50:36,798: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 16:50:36,813: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 16:50:36,817: INFO: common: created directory at: artifacts]
+[2026-10-14 16:50:36,817: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 16:50:37,731: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-10-14 16:54:32,645: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 16:54:32,645: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 16:54:32,645: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 16:54:32,645: INFO: common: created directory at: artifacts]
+[2026-10-14 16:54:32,645: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 16:54:33,352: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-10-14 16:57:54,508: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 16:57:54,508: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 16:57:54,523: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 16:57:54,523: INFO: common: created directory at: artifacts]
+[2026-10-14 16:57:54,523: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 16:57:55,198: ERROR: main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    filename, headers = request.urlretrieve(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-10-14 17:08:38,834: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:08:38,834: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:08:38,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:08:38,834: INFO: common: created directory at: artifacts]
+[2026-10-14 17:08:38,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:08:40,137: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+x-robots-tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Wed, 14 Oct 2026 14:05:47 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+reporting-endpoints: default="/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/web-reports?bl=apps-fileview.texmex_20261001.00_p0&app=15&clss=1&context=eJwV03tcDfYbB_A6l-eTTqVTUkqp0_Wk2-l2UsclZxSGYVQzt8TcZVMxM8LM3RA2d8Jcc7_93DczNLdsIsyWLnQjokL5ffbH-_V9fZ7v8_3neT1f61u6zVZJFvs1SRavSW-TZJFrn2TRPjjJYmhassWk_wRWKjJpQPFLxWDq0euVoh-dMrxWXKQj2a8Vp2nr-HrFbtpqalDsJuvRDQoHerKoQVFJmdcaFd-Sv8NbRSgVb3mrqKAbH5oVd8nT_YMigKymf1DYU0mupbKKWv-mUHrQjGylci5tmq9U7qRtpUrlHrrcQqW8QRbPY1VWtGitSbWSduwzqfZTekxH1TSSsV1UdjQ1MV71DQX3ildFkX5NvKoDdf6mqyqBJqabVRn0e6ZZdZMOHzCr_kffHTOrlpL9uG4qF1o4pZtqBSWe66b6hOzLWaecqO6qDTQ0rbtqEp2vT1D9TtfGJ6oKaK5jD9ViCkBPVRgtHrBZvYo2nNis3k6lsVvU1fRT3Rb1VurrsE09jHKN29RHaODzXPUQKpiwXV1E35ZsV8-nU312qi-S8uxOtYaC2-1SR9GSlF3qHOq5b5e66NkedTG9qtijfkfPg_aq62lir73qDErps1c9gp4t3adupKuj96vvU07zfvV2KkjNUxfRncwK9QOq61Slfk9rf6lSbyZtSrW6Dd1ZV61-QIlFGulNA95qJJn2rreRg3R9g40U0Pe7bGQ5XWppK39Q7Elb6UqLK23lB4r7zU7MdH10Symgvza1lEe0YLe9LKXle-wlh04f1sqvdC3OQW7SzjwHyaO4ow5ipuk6R8mmLKOjzKKgGEeJJGWqo2io-GErqSB9Hycx0K3pTnKPdn7tJHmUv7W13KGsh61lFjl4OIsrTZrgLJnkauEiOjrk6SKn6Mp-F7lFH-e2kU_pyCJXOU1B49wkkqbMd5NMSv7BTYbTkTlt5SRdvdRWblPSPg-ZObqdzKF34ilKeIrjOE9RnPIUa1rm6CWr6HGul5STbbGXOFFQkE4iySpUJ_ZknK-TzvRkgU4qadUWnaynfs06SaH1U70ll-786S0PaG6DtyymsnU-UkMWB3zlpI-fXKBzg_zkMvnf95NQ-vJvf-mqCpCe9KcEyEPqasdMbbUB4kUraS0pcwNEQ3llAXKc3PbFiTedPxQnl-gh_Uulh-OkggqPsEZ-LiZp2dckznT_W5M8puLfTVJOP67pKFuofGYnqaI7CzvJAzrQorOcIEtDZxH66lIXmUHXG7tIAUVvjJdO9NeteHlEKRXxMoIeTTBLKW35yiy7aPo0s2TT0TlmOUP1x83ygfJOmOU4HXL6SE7R8i8_khyS5x-JHWUEd5PWEd3EjX5x6C7XKH92d7lDMdu7SxcypSdIPMVMTZAuZLcvQVqT__0EzjZBcv5JkA00KyRRvqe-_yRKEo0_XyzpNLrwiWTSxZoncpUOvnwix0jfs0RCqOKTEnlJyv4loqEfn5bIRhr9rETG05rGEtlEoTNKJZJmzSmVeTT3fKksoOWUQ-tpC9UEl0kd9dtdJin0ck-ZvKU2NWXiQcZe5dKZUvqWywgqOVEuz2jwlXIZThY3ysWKbHc8FScqOvtUHtPOg89kL-1srJA8OqetlMs001Apc6lmTKVMPFElGdSYWC2WParl3KhquUxL71XLakppUSNDaaGpRlbQpPs1MuLocxlLMzu9kLIhL6SGkFQrlsm1MuBQLXeoljtUK98_qpWl9LXqpSSbXspwMvZ_JZ2p55o66Uu3d9dJIXU4VCfx1CHktXSmBOpNA2kwjaSxNIWyaBZ9R4kb2EeXr76WP2hszWuZTFk0k76jxbSKfqKt9DMdoGP05t4beUeX6upFgwa53K5B8in3bYPspZHNDTKeXlADZVs0ykJaomiUHApXNUos3VA3yl0a06ZR0qmksFGqqKKsUZ7TH95v5TYtGfFWVtC5ae_kV_pz9jt5SA5L34kL9Rj3XvrR48PvpZys3ZqkJalTm8SWCn9uksfkcaxJ_Oh6QZMU0JwPTbKIApXNEk4F4c2SEPpBetPv-z_ITVpntsA2GjvPApOoY50FupFbowW8qd82S6TQp02WWBirwDJyu6aAF_VOU2EgnV-lwm-kuaiCltx6CjypdJCgkjIOC76mKy8Ft-izGcAwCm5lhXC6kmiF67T1vRV-ppmJLTCPvhjXAhPp6f0WqCGvFtbQU5G7NR7TnA7WWERffW6N6RQ5wxod6NVZazRQ2wvW8KG0cmuMp3y6TY98NbDto4EjLcjRYBl5bdTAQAX5GhTS5_UajKRV_jZYT34RNggi42QbmOibOzaYR84lNljXZINt5PeBPRRJsVSQaItCsvW1gyP95GeHrTQh0A5T6X25HVRP7WD30g6tyKxtiR6kfN4SGmr0tMcHqkm3Rx1NnW2P6f_ZYY8O1-2xrNAeqylXrcVe2qPToi5Ui0EGLYbSQvqBvu6vxWwyp2qRSIe3anGCtAe0aEMD3R0whP5a4oAiSl_ugAyqLXNAfTtHvKdPf3ZECl1BK9yizzNaYQTV7GuFOsrLb4WjVObuBPt2TnCid0WtYfmgNQY6OmMIeUY4I4A2mp25c874U-eChzQ01QWjaUQeT0otccEYMja6oDPVZLXBG9JtbwN_qh7qioBRrggmt_mu8M5jptpLrnhDPYtd0Z_S3rhiHFWNdEMtJU5wQ28yBrdFR5LFbaGhoZVtMZKGOLmju7M7Tnu74wJdG-2Om-SR7Q4fajrjDvVZdzxx8kB6iAcyaEWYB9ZQAzXRiuEesP-fB5xoOeXQsH89kEbjrNvhS7K62Q62VPagHWroYHE7nKSJCk98Sf1UnkimsTpPTKYsmkknJ3niAqXd88QE6vuPJ5JoYbUnllERvFBMcxy9sICUPl4APQvywnPShnmhNZ2N8UL_Hl7w3ugFPRWd4TtK1egwjnaH6HCQ3Mw6eNHlVB3yadQ8HSbSsHId_5QOG5d6Ywc9XumNcnrQ7I1_6YW9DxqotK8PfvjCB6vp0RYfnLjjgzM0R-GLRTTBwRdTKdbDF53Jeq8vHCjkgi8iqLrAF69pQbMvltJn8MMwCgj1w7op_thMva77YwClhgVgDP29PABP6GRVAM6Sf0MAguh4Cz3O0CW6RgV0j84G6vEbLTPpsZoGd9JjBFVN0aOWbDL00NKaeXqsp_IlvKP7K_T4m3K267GBJp_RI4sU1_SwoiGFeqTSZ3V6DCPbt3o40JMpgcjPDkQBPaB_KSs3EDOpwz-B6ER96gPxKa18H4h1lB3dHhXx7fGcrk1sj5uUvro9Mmi4IQibvghCLj20DgYSgnGVblDMsmB0ou70MaXSGEqnTPqW5lHvwBAMpKD2IQinDTkh2E7HqkPgg1BMtApFfXgo3tPKrmFYS2_SwvCOsteHYT6NrAnDGIqwNCCWDD4GRNNdowGPaPIaAzKpbJ0BlbT2tgGbKe2ZAePp13oDrtDfTQY8oReR4WggkzEcZrKMC4fQxlvh2EbKu-FoQX0ehqOxIhzNNCgoAoMpKiYCHWkIpdHUAxGYTmdqI3CR3H-MhI4C8iMRRg3vImHxPhIDbaMwmGrsolBHdi2j0Ir6T4jCZ3R3dxRWHY9CzytR6EvmoigkkrUmGg702DkaZbQpPBo76OCUaIStj4b7jmh4U1J-NIZQvKUR3WmatREzySvQCH-q7GHEC5ra34gZ5DHACB-qHGnEK_prjxEP6NJRI66S20kjPKmu2YhGKvCMQSF5-8bA3z8GwWRviIETKSNjcCY6Br-QdVwMtDRuaAzSyao0BvtexSAkqQMiKWJWB8RSVVQsXtE3i2KRTSMLYjGFsuib-7GYRwPi45BMAz-Ow2DqszYOl3bHIZ9K9sShgnrlxaFGa8Ir6uNjQkqACV22mNCNFuw2YRnJfhM01OqRCW1oTMeOuD2-I-JMyfgkIRlJFNQ3GeGUNCYZQ2ilLgUf7UmBg43V6R_P3RX72Tv-2GHpqho0dlSWzntEevpXwaPHThiVyRgyddS0iaOmDQsPC482hIUZQsLChqWH_R-P8PJS&build-label=apps-fileview.texmex_20261001.00_p0&imp-sid=CLGmiezWuZcDFTTFcwQdgxkCBw&is-cached-offline=false"
+document-policy: include-js-call-stacks-in-crash-reports
+Referrer-Policy: origin
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: NID=CuQBCAESlgEBOxGDSOvi4xBGKPjh79luFCHA_wOLRSeoeqJokluJyzj7c8i115h0QAYnziAQiBKDXthAU5reWnrM1iSw73IsqdXkCJTidkO2FyrKjiXbglwLO6Lv76A_iO3d3C5otF8jjEn5MbUarBV_CXMOgDETruS812mpwQ-GwlpcFm8bg6Fsmg4dX38JzQW7OEioqYPZJWWnhIAoATJFAdKsB8-wCzVBlll-I4qR383OsdTWtF9_BkQ3N0OpRWcFSCn_OvleWQRogtfJ8CORt3LKskSv8Bakxs8kxj7q4iX9VlEA; expires=Thu, 15-Apr-2027 14:05:47 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2026-10-14 17:08:40,467: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 27, in extract_zip_file
+    with ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2026-10-14 17:17:26,797: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:17:26,797: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:17:26,797: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:17:26,797: INFO: common: created directory at: artifacts]
+[2026-10-14 17:17:26,797: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:17:26,797: INFO: data_ingestion: Downloading data from https://drive.google.com/uc?id=1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3 into file artifacts/data_ingestion/data.zip]
+[2026-10-14 17:17:27,441: ERROR: main: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=drive.google.com
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\gdown\download.py", line 273, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\gdown\download.py", line 55, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses. Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\gdown\download.py", line 284, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=drive.google.com
+
+but Gdown can't. Please check connections and permissions.
+[2026-10-14 17:30:16,217: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:30:16,233: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:30:16,233: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:30:16,233: INFO: common: created directory at: artifacts]
+[2026-10-14 17:30:16,233: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:30:16,233: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_URL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_URL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_URL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_URL'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\config\configuration.py", line 25, in get_data_ingestion_config
+    source_URL=config.source_URL,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2026-10-14 17:32:23,591: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:32:23,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:32:23,591: INFO: common: created directory at: artifacts]
+[2026-10-14 17:32:23,608: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:33:10,709: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:33:10,709: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:33:10,709: INFO: common: created directory at: artifacts]
+[2026-10-14 17:33:10,719: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:35:22,842: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:35:22,842: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:35:22,842: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:35:22,842: INFO: common: created directory at: artifacts]
+[2026-10-14 17:35:22,842: ERROR: main: 'NoneType' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\config\configuration.py", line 21, in get_data_ingestion_config
+    create_directories([config.root_dir])
+AttributeError: 'NoneType' object has no attribute 'root_dir'
+[2026-10-14 17:38:19,527: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:38:19,527: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:38:19,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:38:19,527: INFO: common: created directory at: artifacts]
+[2026-10-14 17:38:19,527: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:38:19,527: ERROR: main: 'DataIngestion' object has no attribute 'download_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+AttributeError: 'DataIngestion' object has no attribute 'download_file'
+[2026-10-14 17:45:04,429: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 17:45:04,439: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 17:45:04,439: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 17:45:04,439: INFO: common: created directory at: artifacts]
+[2026-10-14 17:45:04,439: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 17:45:04,439: INFO: data_ingestion: File already exists of size: ~ 81 KB]
+[2026-10-14 17:45:04,439: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 27, in extract_zip_file
+    with ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2026-10-14 18:25:52,347: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:25:52,347: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:25:52,356: INFO: common: created directory at: artifacts]
+[2026-10-14 18:25:52,359: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:25:52,361: INFO: 3188604689: File already exists of size: ~ 81 KB]
+[2026-10-14 18:28:15,109: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:28:15,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:28:15,120: INFO: common: created directory at: artifacts]
+[2026-10-14 18:28:15,122: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:28:16,422: INFO: 3188604689: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+x-robots-tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Wed, 14 Oct 2026 15:25:23 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+reporting-endpoints: default="/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/web-reports?bl=apps-fileview.texmex_20261001.00_p0&app=15&clss=1&context=eJwV0nlcDPgbB_Ca43mqqTQdSqmm6ZpJ13RNxySZpbC0hIoNJW0oarfCujZa6z7DrlhH1sqRm-zKsRtLbY7siuJnt5NOERWl32f_eL--r-fzPN__PgbF8v16MTonJTE6b0FpGKNTYBKjM8wjRmdGUqzOgv-4tQiyIbr2tWA6jBn3RjARLqveCm7AuZy3gl_h4PxuQSEc1PQICsEguUdgCnXrewQtkF3WK1gBrqbvBV5Qe-C9oBnuDnwUPAKZ7YBAAXpLBgQmUF-gK2yFwTcFQjtYmiMUroYf1wiFR-BQg1B4DG7pi4R3QacjWKQH63drRNsh_4RGVADpgaGixTBud6goGmjuCJExZEaGi5aBx7hwkT8od4WLgiBs2UhRBKSla0VZ8Ee2VnQPzp7Sin6Bby9oRZvAZN4okRWsyxgl2gaRV0eJPgOTJuSQ5z9atBdmJI0WLYBr3RGiP6BsfqSoElabjRFtAAWPFXnDhuj94h2wPGW_-FvYe2m_-DA0BB8Qt8EPXQfEByHK9JB4JhSoD4nPwZZbBeLdMKWjQBwPlamHxdWwov6weA1cnnBEfAOEJUfEEvCwPyr2h41xR8V5MPbEUXH1y2PiWuhwPy7uhrRxx8VZEDfhuDgBXm46Ie6FO8knxU8g7-NJ8WGoTCwSV8PD7GZxDXQNbxX3we7fWsX7QRrXJh4CD_e0iWsgslpC4yH6vYRi4Xi-IZ2Gir2GVAnfHTWkLVA6yIj-hOBiIxoJG1qMaCuE3DQmLVQkD6JK-PvHQfQM1haa0CbYcsyE8uDXs1L6HUpDTOkOHCkypSIIOW9KWlgiN6McWKQ2o5XgHmhGfiBMNCMJ1D41p2ZQTrAgFdxfYkGP4cjXFlQE5QcH00NY9HQwrQRTO0uyhgWplpQN1jpWJIczMiu6DLdPWtF9-LRgCE2Gc-ut6Vdwn2dDfpCxxoayIXarDc2Cc6uGUjHcKR1KDyDmhB0tT7anVfCBZCRkGU2fJqPZYDZPRoLLMjKAzWYOtAOeFzhQExjVOpAFuLvLyQ_0vORkAuo1cgqDurVyaoEdB-SUDxM_yikO8jMdqQAe_uVINbC6x5E2QOMeJ2oHnVPOVOzkQtfh6lQXugVf_s-VRooUNBZuihVUAX-Rgp7CSGPkMFSqIAfYDrtBWKAgCRQ1Kugi2JwIIUe4diaESuEp_AsNZ0OoGarOIQMXKw0NitKQJTxZoaHnUPuHhprg-12hdACalg-nVni4bjjVwCn9MLoEuqowIviqdAQthYreEVQJAfvCaTj8fT-cnkFcczglwLNULTXAga-0dBSWLNZSDpxfpaUr0H1RSwNQdElLF-GMxSd0GbZ8-QnlAXV8QsaQ5TGKBvuOIhv4zXQ0lUH5N6PpIQQeHk0jQJMeQeEQmBlBI8D4RAQNBtcnEeQFef9E0F5Y6RlJ30HUP5EUA_Ov1VI6JFfVUTbcaK-jO3D6dR1dAOXYevKE5s_q6TUIJ9WTBL5_UU_7IPllPc2HXb319CN4LW0gP1i5qoFyYfW1BloLWyAP8uEAXBE0UrtHI3XBxMJGioPXxxrpPQxpbyQ7UI9rojCIi2qiBKi_1EQvYfrtJpoFOnebSA-MfnpBFlBd8oKew5HTL-k4HOltpiK4Km2hW7Bc1UKroT2lhdIutVIW9Ea2ke6YNro6p41uwabHbbQT4vTbaQas07TTNljwpJ0SznfQXFg-_BU1xr-iduCYTtKN7aToM53oUSd61EnfPeukTfC16DXFal7TLFBPekNhMHZXF0XBg8IuqoKgM10UDkGebykMImA8TIHpMBvmQgYsgpXwLUTuxR3cuvOW_oS57W9pISyC5fAtbIAd8AMchJ_hFFyAd4_f0Qco7eomCffQLfseKoeC9z10HEr6eugm5Oj00jrYKOilPPAR9VIw3BX30iNIGdJL6VBf1Uut0NzYSx1w0_E9lcHGhPe0Da4u_kC_w1_ffKCnYLrpA1lB9Lw-mg7Pz_ZRExjY9NMgECf2kxFU_dxPz8HuQj-5QEVlP1XCqoF-Wg9uwo_kA5U-HynCa4DGwx8nB-ge7NHq8CGYm6vDCyC0S4dHgU2vDjvCxEO6HAeT-3V5XbCAN4NNmYAdYHySiKfAtR0ivgmSGyKWgs1YYhk0TCVugayzxF_D7dfE92HaUuaZ4GGuxz5wO1KPK-Bgnx7_DMsj9TkXvpinz2nw4ok-t4ODvgErodrWgJ_DqiADXg9ffW7AS8BvqQEHwZsSA-6BodcN2AmSmgx4PpTDA3jmLGGjCRI2g7V5Et4MDvskrII_yyX8AD7vlvBs2OFqyPng4mvI7qBeaMgaWPbQkHPBst6Q9_Qb8iFwGcAN-EEwVEYacRUYORuzGfzgYswHIdXNmDOhr8mYRS-M2fi1MZuDVjqIx4CwYxBLoFdmwgPQnm7CXZD5jQkv-c9PJhxUYcKbq0x4JxSIpXwcjsml3OUl5akqKc-AdbAVvp4k5W9AmyjlSDh7UMqXQHpKykNgiq0px8PfG025GtK3mHIWdDaacre9GffB5J_NOA5usznfh8-zzDkB2k-YcxcUlZvzeWi0tWATewu2gA_Vg1m3ZjBPMbPkeJD5WrIC9mkt0TlL_ktuxU9hRqIVJ0NCEV5IrLfiFFD3WnEYtC8awu9AfngIu0LbDGtWzLFmD7BZY82ORZihs9Sa38HYWmueBPHvrHk2tM624U6ITLXh8aD2GMqhQBuGsgRmtAzl2RBvYcujLW35V0dbvg5lybZ8D-xybNkJ-q_YsrjEluss7Djd046zYJu3He-CHuiHbbPs2OQXO7aALZAHM_-14ySYZ2DPX4LePXs2gsYae26H07X2XAxpAhl_CRNFMo6FuXIZL4QMyIbiBTK-DkmPZZwKUf_IOAbWtcl4M1SzA9fCKjMHXgtCJwdmeOnuwB0g9XbgwVAS6MCTxjiw4z4HVkL1FfyDRImc50Ghp5xPg41Wzg4wJ1fOaTCnCXvYt8mRf4Ln2x25CWo-OvK_8MrEiXugIcqJt37hxDvh2QEnLnnoxL_BKoEzr4dUU2fOhGA7Zw4Dg-PObAqe153ZF9oqnfktrP3ozJtgGrvwTFB4ufCeDFfeD-MqXDkaEr0VnAL_26LgOihuVXAJuPYo2B0u6iv5CpRCGVTCYyhxU_JN2KxR8k6YPlzJCdCaoeROMMxSshR25So5H5o2Ygd5h5W8FxZeUfIiEJQpWQ_iq5ScCNO6lDwTjN4r2RTqMty4PMeNK6EG_oWgf9x4OEzoduPJsL3PjfdATsAwbg4fxh1QljaM70H6zmGcBbNU7lxn4MEc4cF34C4Ebvbg4TAaPoVESIF0yIYVkAvj3Tx5CrgP82Qf2JvnyYfhQpsnO7EXp-l5cbePF_fB9pHevBveJXnzB8jJ9-Y1MLvdm1PAV1fFwaByUnEAPFKr-Bks3KXibGjco-IW2P1Axfsh6aWK58Pv3Sq-DY_7cQ-v_Hy4BzRqH9aCbogPE-y778OHQPjIh_VhwlMf7m324Y8w1d2Xp4N_oC-HQjwkQeYpX14CVzp9-QbYfu_HclCU-7E39HzwY50-P55i5M_Tod3Yn7vAeJA_m4Mw2p_1YVKqP0-DR4X-vOOiP4-97c9RoK3250gwkASwKTy3DOBGOJ0RwOr8ALb9KYAdIaY8gOMhXFfNo2GxgZqXg8JNzV7QMkbNryBzkpqXgl20mp3g7Ww198Pfx9RcA6Xn1XwHbIrVLINKWSBXgaNzILu6BrIHmKgC2QKEfoFsEBLIUpg3I5DTQa8hkE-8CWTPmCD2A9-VQRwMrf7B_AaWrQ_mHJhdGcwZsAiWPQnmXIgOD-FYiPo0hCfDhN0hXFoYwuVQfyyEm2FcUQi3SzX8BmycNCyHCRCn0PDaQg1vBsOTGpaC-TMND4GU0FBWjQjlB_NDOUQTy59FxHLMf1JiOR62y-P4k2NxvHXFNN4FpoZ6dSVXH5FJcUXuLYG1aOrcOYvkjgnp6V95JM9NnZON0TNzzuK0OYtn-nj7BKi8vVWe3t4z073_DyXW4sA&build-label=apps-fileview.texmex_20261001.00_p0&imp-sid=CPHC1NHouZcDFTTFcwQdgxkCBw&is-cached-offline=false"
+document-policy: include-js-call-stacks-in-crash-reports
+Referrer-Policy: origin
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: NID=CuUBCAESlwEBOxGDSMzb2l4nfKX2rX-cZeFhdI01UmCEwn5ALHfyRte3Xp_zzV-o5IoR_lW1VTw9jEpAhw51_02kw2pf0GnlU6G1c2Y9CrpdGHw0UgY5D3S37V99P9NM7th-Zq0mLarZrwkntQ-Nbx_ba2Z6a1Cfo8CeelPxGZrd31hKvucxuVrHUKqiLidNMIEGoz7KGw3wYNbjwJCkKAEyRQHSrAfPL0sanosLeRCjqujrlszGm6e3tZDc84YhJme47bhqBdjKJollybd9B2TkwKK40UGAwwzdxgti43f9GvWnN1uQCQ; expires=Thu, 15-Apr-2027 15:25:23 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2026-10-14 18:29:03,184: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:29:03,195: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:29:03,198: INFO: common: created directory at: artifacts]
+[2026-10-14 18:29:03,201: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:29:03,201: INFO: 3188604689: File already exists of size: ~ 81 KB]
+[2026-10-14 18:29:38,200: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:29:38,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:29:38,210: INFO: common: created directory at: artifacts]
+[2026-10-14 18:29:38,212: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:29:39,323: INFO: 3188604689: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+x-robots-tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Wed, 14 Oct 2026 15:26:46 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+reporting-endpoints: default="/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/web-reports?bl=apps-fileview.texmex_20261001.00_p0&app=15&clss=1&context=eJwV0nlcDPgbB_Ca43lqpms6lFJN0znpmq7pmCSDwmIJ1RJK-YWidiss1oa17jPsOlZkrRy5r13nbmupdWVXFMt20jGJqEH1--wf79f39Xme5_vfR1Kk2GuUYHBMmmDwFpQmCQbFFgkGA30TDKamJRrM_Y93iyAf4mtfCybDiFFvBOPgouqt4DqcLngr-AX2zekSlMA-TbegBCQzuwWWULemW9AC-eV6wVfgafle4A-1Re8FzXCnr1fwEOSOfQIvMFrYJ7CA-mJDYSv0-10gdIJFBULhcvhhpVB4EPY3CIWH4YaxSHgHDNojREawZodGtAWyw6JEC2DUjihRPNCswSIzyI2LES0G31ExohBQbo8RhUP04iGiWMjK1ory4I98regunDquFf0M35zVitaDxexhIjtYnTNMtBnirgwTfQoWTZhDYchw0W6YmjZcNBeudsWK_oDyOXGiSlhuNUK0Frx4pCgA1sbvFW-FbzP2ijfC7vN7xQegIaJI3AbfdxaJ98FYy_3iaVCs3i8-DRPbi8XJUJl5QFwNX9UfEK-Ei2MOiq-D8PJBsRR8nQ-JQ2Bd0iFxIYw8ekhc_fKwuBbafY6IuyBr1BFxHiSNOSJOgZfrj4r1cGvmMfFjKOw9Jj4AQz1LxZ9AZWqpuBoe5DeLa6BzUKv4I-z4tVW8F2RJbeL-8GBnm7gG4qqlNBri30spEY7sMqETcHu3CVXCt4dMaCOUmZvSnxBxwZSGwNoWU9oEkb-bkRZuzzSnSvj7B3N6CqtKLGg9bDxsQYXwyykZ_QblkZZ0Fw6WWlIpRJ6xJC0sVFhRAcxXW9FS8AmzomAQplqRFGqfWFMzKMfYkAruLbShR3DwSxsqhYp9_egBzH_Sj5bCBLKlKWDpZEv2MDfTlvLB3sCOFHBSbkcX4eYxO7oHnxT3pwlweo09_QI-sx0oGHJWOlA-JG5yoOlwetkAugC3ygbQfUg46kTLZzrTKvhAchKynKxmy0lwUU4S2GDlQlvhWbELNYFprQvZgI-PgoLByF9BFqBeqaBoqFuloBbYWqSgXTCuV0FJsCvXlYrhwV-uVAPLu11pLTTudCMdGBx3pwtuHnQNrkzyoBuw4B9PGiLyopHwF3nRExhihgwDZF7kAltgBwiLvUgKpY1edA4cjkaSK1w9GUll8AT-hYZTkdQMVacxAw87DZmP1ZAtPP9KQ41Q-4eGmuC77VFUBE1LBlErPFg9iGrguHE0nQdDVTQRfFE2mBbBbf1gqoTQPTE0CP6-F0NPIak5hlLgaaaWGqDoCy0dgoULtFQAZ5Zp6RJ0ndNSH5Se19I5OGkzlC7Cxs-HUiFQ-1AygzzfYdQvaBg5wK-Ww6kcKr4eTg8g7MBwGgya7FiKgbDcWBoMZkdjqR94Po4lfyh8Hku7YalfHH0LY5_HUQLMuVpL2ZBeVUd5cF1XR7fgxOs6OgvKkfXkB82f1tNrEI6vJyl896Ke9sDMl_U0B7br6-kH8F_UQMGwdFkDrYDlVxtoFWyEQtgFRaDzbaROGFfSSEnw-nAjvYf-ukZyAvWoJoqGpLFNlAL155voJUy-2UTTweBOExmB6Y8vyAaqL7-gZ3DwxEs6Agf1zVQKV2QtdAOWqFpoOegyWijrfCvlgT6ujQxHtNGV9Da6AesftdE2SDLW0VRYrdHRZpj7WEcpZ9ppFiwZ9Ioak1-RDjihgwwTOyj-ZAc61IEOddC3TztoPXwpek2Jmtc0HdTj31A0jNzeSWPhfkknVUH4yU6KgXC_txQNsTAaJsJkmAGzIAfmw1L4BuJ24w5u3HpLf8Is3VuaB_NhCXwDa2ErfA_74Cc4Dmfh3aN39AHKOrtIyt10w7mbKqD4fTcdgcbebtJBgYGeVsM6gZ4KIVCkpwi4I9bTQ8jor6dsqK_SUys0N-qpHf50fU_3YV3Ke9oMVxZ8oN_gr68_0BOwXP-B7CB-9keaDM9OfaQmkDj0kDmIU3vIFKp-6qFn4HS2hzzgdmUPVcKyvh5aA97CXgqEysBeivXvo9Hwx7E-ugs7tQa8H2atMOC5ENVpwMPAQW_ArjBuvyEnwYQeQ14dIeAN4FAuYBcYnSbiiXB1q4h_B-l1EcvAYSSxHBomEbdA3iniL-Hma-J78Nki5mnga23EgXAzzohvw76PRvwTLIkz5hXwv9nGnAUvHhuzDlyMJayEakcJP4Nl4RJeA19MkfBCCF4k4XB4c1nC3TDgmoTdIK1JwnOgAu7DU3cpm46RshWsKpTyBnDZI2UV_Fkh5fswpUvKM2CrpwnvAo8gE_YB9TwT1sDiBya8AmzrTXhTjwl_Bx59uIFgiIDKOFOuAlN3M7aC7z3MeB9keptxLnxsMmPRCzM2e23G1qCVmfMIUMebcxQI281ZCnq5BfeBLtuCOyH3awte-J8fLTj8tgVvqLLgbVAslvEROKyQcae_jCepZDwVVsMm-HK8jL8GbaqM4-DUPhmfB9lxGfeHiY6WnAx_r7PkasjeaMl50NFoyV3OVvwRJvxkxUlwk635HkzJs-YU0B215k4orbDmM9DoaMMWzjZsAx-q-7FhTT-eaGXLySAPsmUv2KO1Rfds-S-FHT-Bqal2PBNSSvFCar0dZ4Bab8fRoJvfn9-B4kB_9oS2qfbslW7PvuCw0p5dS5Gho8ye38HIWnseD5Pe2fMUaJ3hwB0Ql-nAo0HtO4CjgNYOYClMbRnAMyDZxpGH2zryL66OfA3KZzryXXAqcGQ36LnkyOLLjlxn48TZfk6cB5sDnHg7dEMPbJ7uxBY_O7ENbIRCmPavE6fBbIkzfw5Gd53ZFBprnFkHJ2qd-QJkCeT8OYwTyTkRZinkPA9yIB8uzJXzNUh7JOdMGPtczgmwuk3OG6CaXbgWllm58CoQurkww0sfF24HWYAL94PLYS48foQLu-5xYSVUX8I_SJUqeDaU-Cn4BDhoFewC6SsUnAXpTdjDnvWu_CM82-LKTVDT68r_wisLN-6GhrFuvOl_brwNnha58fkHbnwJlgnceQ1kWrpzLkQ4uXM0SI64syX4XXPnIGirdOe3sKrXndfDZ-zB08DL34N35njyXhh125PjITXAizPgn41eXAcXWr34Mnh2e7EPnDNW8iUog3KohEdw2VvJv8MGjZK3weRBSk6B1hwld4BJnpJlsH2FkndB0zrsoPCAknfDvEtKng-CciUbQXKVklPhs04lTwPT90q2hLocb64o8OZKqIF_Ify5Nw-CMV3ePAG2fPTmnVAQOpCbYwZyO5RnDeS7kL1tIOfBdJUP10l8mWN9-RbcgbANvjwIhsMnkAoZkA358BWsgNHefjwRfAb6cSDsLvTjA3C2zY_d2J-zjPy5K9CfP8KWIQG8A96lBfAHKNgVwCthhi6AMyDIUMURoHJTcSg8VKv4KczbruJ8aNyp4hbYcV_FeyHtpYrnwG9dKr4J__SouA5eBQdyN2jUgawFw8hAJthzL5D3g_BhIBvDmCeBrG8O5F6Y5BPEkyEkLIijIBnSIPd4EC-ESx1BfB0cvwtmBXhVBHMAdH8IZoOPwTzRNIQng84shDvBzDyErWF8Zgh_Bg9LQnjduRAeeTOEx4K2OoTjQCINZUt4ZhvKjXAiJ5TVu0LZ8cdQdoWEilBOhhhDNQ-HBRI1LwEXbzV7QssINb-C3PFqXgRO8Wp2g7cz1NwDfx9Wcw2UnVHzLXC4oGY5dPaqWQ-V8jCuAlf3MPb0DGNfsFCFsQ0Ig8NYEhnGMpg9NYyzwaghjI-9wW1COPtC0NJwjoCyV-FcDq0hEfwGFq-J4AKYURnBOTAfFj-O4BUQHxPJiTBmRySXlURyBdQfjuRmGFUayWduR_LPoJNp-A2McdNwkpeGV5VoeAPQMQ1LwfqphvtDRlQU350TxZGaRP40NpET_pORyMmwRZHEQw8nsaWJ0bkrVx6SxaPOK9sF9qJJs9LnK1xTsrO_8J05KzM9H9EvN31BVvqCaYEBgaGqgACVX0DAtOyA_wOz-N92&build-label=apps-fileview.texmex_20261001.00_p0&imp-sid=CPezmPnouZcDFTTFcwQdgxkCBw&is-cached-offline=false"
+document-policy: include-js-call-stacks-in-crash-reports
+Referrer-Policy: origin
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: NID=CuUBCAESlwEBOxGDSF7OIOeyfje_vrExGUEPSZaJERMETFu90sM7d-RBdFQvZo8QN-wYT7tHkjSwPxw6iUb5n_VjzhioCGSg-qcVK5GIMDDpZ5SowGW03sp9sd9Vh3J6aU85HktIeQjtST_DZTJfemWkb3khr0NlSk8x4FnAErsKZziR5hVF3O51YJwbCWT1udK5ICzH6d3hSXZ3P22jKAEyRQHSrAfP_Fz_XYhg7bg-tAJMcvdDdFrGQUoii4VzQVdS3R63hhVL0JoBoPwFQiHT6jMzKEpXKEk9VeNe8-_YEoSTZh53BQ; expires=Thu, 15-Apr-2027 15:26:46 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+]
+[2026-10-14 18:33:46,867: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:33:46,869: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:33:46,873: INFO: common: created directory at: artifacts]
+[2026-10-14 18:33:46,875: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:33:46,880: INFO: 3188604689: File already exists of size: ~ 80 KB]
+[2026-10-14 18:33:59,778: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:33:59,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:33:59,785: INFO: common: created directory at: artifacts]
+[2026-10-14 18:33:59,788: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:37:36,163: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:37:36,163: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:37:36,163: INFO: common: created directory at: artifacts]
+[2026-10-14 18:37:36,163: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:39:59,077: INFO: 3076173673: Downloaded data into artifacts/data_ingestion/data.zip]
+[2026-10-14 18:49:01,365: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 18:49:01,365: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 18:49:01,365: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 18:49:01,365: INFO: common: created directory at: artifacts]
+[2026-10-14 18:49:01,365: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 18:49:01,365: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-14 18:49:02,084: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
