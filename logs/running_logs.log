@@ -496,3 +496,503 @@ x==========x]
 [2026-10-14 22:13:11,690: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2026-10-15 00:19:04,815: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 00:19:04,823: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:19:04,839: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:19:04,839: INFO: common: created directory at: artifacts]
+[2026-10-15 00:19:04,839: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 00:19:04,839: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 00:19:05,482: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 00:19:05,482: INFO: main: *******************]
+[2026-10-15 00:19:05,482: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 00:19:05,497: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:19:05,497: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:19:05,497: INFO: common: created directory at: artifacts]
+[2026-10-15 00:19:05,497: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 00:19:06,125: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 00:19:06,407: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 00:19:06,407: INFO: main: *******************]
+[2026-10-15 00:19:06,407: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 00:19:06,418: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:19:06,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:19:06,423: INFO: common: created directory at: artifacts]
+[2026-10-15 00:19:06,423: INFO: common: created directory at: artifacts\training]
+[2026-10-15 00:22:17,336: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 00:22:17,336: INFO: main: *******************]
+[2026-10-15 00:22:17,336: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 00:22:17,346: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:22:17,352: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:22:17,352: INFO: common: created directory at: artifacts]
+[2026-10-15 00:23:15,168: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:23:15,173: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:23:15,173: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-10-15 00:30:24,971: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 00:30:24,984: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:30:24,988: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:30:24,988: INFO: common: created directory at: artifacts]
+[2026-10-15 00:30:24,988: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 00:30:24,988: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 00:30:25,671: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 00:30:25,671: INFO: main: *******************]
+[2026-10-15 00:30:25,671: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 00:30:25,685: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:30:25,688: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:30:25,688: INFO: common: created directory at: artifacts]
+[2026-10-15 00:30:25,688: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 00:30:26,356: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 00:30:26,622: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 00:30:26,622: INFO: main: *******************]
+[2026-10-15 00:30:26,622: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 00:30:26,622: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:30:26,622: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:30:26,622: INFO: common: created directory at: artifacts]
+[2026-10-15 00:30:26,622: INFO: common: created directory at: artifacts\training]
+[2026-10-15 00:33:14,205: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 00:33:14,205: INFO: main: *******************]
+[2026-10-15 00:33:14,205: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 00:33:14,205: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:33:14,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:33:14,205: INFO: common: created directory at: artifacts]
+[2026-10-15 00:34:09,456: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:34:09,456: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:34:09,456: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-10-15 00:48:52,093: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 00:48:52,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:48:52,093: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:48:52,093: INFO: common: created directory at: artifacts]
+[2026-10-15 00:48:52,093: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 00:48:52,093: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 00:48:52,783: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 00:48:52,783: INFO: main: *******************]
+[2026-10-15 00:48:52,783: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 00:48:52,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:48:52,799: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:48:52,799: INFO: common: created directory at: artifacts]
+[2026-10-15 00:48:52,799: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 00:48:53,442: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 00:48:53,771: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 00:48:53,772: INFO: main: *******************]
+[2026-10-15 00:48:53,772: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 00:48:53,772: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:48:53,772: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:48:53,772: INFO: common: created directory at: artifacts]
+[2026-10-15 00:48:53,772: INFO: common: created directory at: artifacts\training]
+[2026-10-15 00:51:20,250: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 00:51:20,250: INFO: main: *******************]
+[2026-10-15 00:51:20,250: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 00:51:20,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 00:51:20,265: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 00:51:20,265: INFO: common: created directory at: artifacts]
+[2026-10-15 00:52:08,135: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:52:08,135: INFO: common: json file saved at: scores.json]
+[2026-10-15 00:52:08,135: ERROR: main: No module named 'dagshub']
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    import dagshub
+ModuleNotFoundError: No module named 'dagshub'
+[2026-10-15 01:06:52,518: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 01:06:52,530: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:06:52,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:06:52,530: INFO: common: created directory at: artifacts]
+[2026-10-15 01:06:52,530: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 01:06:52,530: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 01:06:53,488: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 01:06:53,488: INFO: main: *******************]
+[2026-10-15 01:06:53,488: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 01:06:53,503: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:06:53,503: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:06:53,503: INFO: common: created directory at: artifacts]
+[2026-10-15 01:06:53,503: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 01:06:54,460: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 01:06:54,931: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 01:06:54,931: INFO: main: *******************]
+[2026-10-15 01:06:54,931: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 01:06:54,947: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:06:54,947: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:06:54,947: INFO: common: created directory at: artifacts]
+[2026-10-15 01:06:54,947: INFO: common: created directory at: artifacts\training]
+[2026-10-15 01:09:31,874: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 01:09:31,874: INFO: main: *******************]
+[2026-10-15 01:09:31,874: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 01:09:31,890: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:09:31,890: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:09:31,890: INFO: common: created directory at: artifacts]
+[2026-10-15 01:10:21,486: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:10:21,486: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:12:24,326: INFO: _client: HTTP Request: POST https://dagshub.com/login/oauth/middleman "HTTP/1.1 504 Gateway Time-out"]
+[2026-10-15 01:12:24,326: ERROR: main: Expecting value: line 1 column 1 (char 0)]
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\model_evaluation_mlflow.py", line 58, in log_into_mlflow
+    dagshub.init(repo_owner='afnanm25', repo_name='Kindy-disease-Classification', mlflow=True)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\common\init.py", line 86, in init
+    repo_api = RepoAPI(f"{repo_owner}/{repo_name}", host=host)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\common\api\repo.py", line 78, in __init__
+    self.auth = dagshub.auth.get_authenticator(host=host)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\auth\tokens.py", line 374, in get_authenticator
+    return _get_token_storage(**kwargs).get_authenticator(**kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\auth\tokens.py", line 122, in get_authenticator
+    token = self.get_token_object(host, fail_if_no_token, **kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\auth\tokens.py", line 187, in get_token_object
+    good_token = oauth.oauth_flow(host, **kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\auth\oauth.py", line 46, in oauth_flow
+    token = oauth_flow_post(flow_data)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\dagshub\auth\oauth.py", line 117, in oauth_flow_post
+    raise Exception(f"Error while getting OAuth code: HTTP {res.status_code}, Body: {res.json()}")
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\httpx\_models.py", line 832, in json
+    return jsonlib.loads(self.content, **kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2026-10-15 01:30:00,822: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 01:30:00,871: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:30:00,891: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:30:00,891: INFO: common: created directory at: artifacts]
+[2026-10-15 01:30:00,891: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 01:30:00,891: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 01:30:01,994: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 01:30:01,995: INFO: main: *******************]
+[2026-10-15 01:30:01,995: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 01:30:02,003: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:30:02,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:30:02,008: INFO: common: created directory at: artifacts]
+[2026-10-15 01:30:02,008: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 01:30:03,258: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 01:30:03,866: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 01:30:03,866: INFO: main: *******************]
+[2026-10-15 01:30:03,866: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 01:30:03,875: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:30:03,875: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:30:03,875: INFO: common: created directory at: artifacts]
+[2026-10-15 01:30:03,875: INFO: common: created directory at: artifacts\training]
+[2026-10-15 01:33:12,636: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 01:33:12,636: INFO: main: *******************]
+[2026-10-15 01:33:12,636: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 01:33:12,636: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:33:12,652: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:33:12,652: INFO: common: created directory at: artifacts]
+[2026-10-15 01:34:02,684: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:34:02,684: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:34:04,276: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+==========================================']
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\model_evaluation_mlflow.py", line 67, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 401 != 200. Response body: '=============== ATTENTION! ===============
+
+To use authentication, you must first: 
+    Get your default access token from: https://dagshub.com/user/settings/tokens
+    OR 
+    Set a password: https://dagshub.com/user/settings/password 
+=========================================='
+[2026-10-15 01:34:39,395: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-15 01:34:39,404: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:34:39,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:34:39,411: INFO: common: created directory at: artifacts]
+[2026-10-15 01:34:39,412: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-15 01:34:39,413: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-15 01:34:40,376: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-15 01:34:40,376: INFO: main: *******************]
+[2026-10-15 01:34:40,377: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-15 01:34:40,383: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:34:40,389: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:34:40,389: INFO: common: created directory at: artifacts]
+[2026-10-15 01:34:40,391: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-15 01:34:41,355: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-15 01:34:41,805: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-15 01:34:41,806: INFO: main: *******************]
+[2026-10-15 01:34:41,806: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-15 01:34:41,814: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:34:41,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:34:41,822: INFO: common: created directory at: artifacts]
+[2026-10-15 01:34:41,822: INFO: common: created directory at: artifacts\training]
+[2026-10-15 01:37:21,850: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-10-15 01:37:21,850: INFO: main: *******************]
+[2026-10-15 01:37:21,850: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-10-15 01:37:21,850: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-15 01:37:21,865: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-15 01:37:21,865: INFO: common: created directory at: artifacts]
+[2026-10-15 01:38:10,845: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:38:10,845: INFO: common: json file saved at: scores.json]
+[2026-10-15 01:38:25,807: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-10-15 01:38:27,594: INFO: builder_impl: Assets written to: C:\Users\SKYCOD~1\AppData\Local\Temp\tmpixbfoszv\model\data\model\assets]
+[2026-10-15 01:50:23,638: ERROR: main: API request to https://dagshub.com/afnanm25/Kindy-disease-Classification.mlflow /api/2.0/mlflow/model-versions/create failed with exception HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /afnanm25/Kindy-disease-Classification.mlflow%20/api/2.0/mlflow/model-versions/create (Caused by ResponseError('too many 500 error responses'))]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\urllib3\connectionpool.py", line 897, in urlopen
+    return self.urlopen(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\urllib3\connectionpool.py", line 897, in urlopen
+    return self.urlopen(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\urllib3\connectionpool.py", line 897, in urlopen
+    return self.urlopen(
+  [Previous line repeated 2 more times]
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\urllib3\connectionpool.py", line 887, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /afnanm25/Kindy-disease-Classification.mlflow%20/api/2.0/mlflow/model-versions/create (Caused by ResponseError('too many 500 error responses'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 167, in http_request
+    return _get_http_response_with_retries(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 98, in _get_http_response_with_retries
+    return session.request(method, url, **kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\requests\adapters.py", line 691, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /afnanm25/Kindy-disease-Classification.mlflow%20/api/2.0/mlflow/model-versions/create (Caused by ResponseError('too many 500 error responses'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 56, in <module>
+    model_evalution.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\components\model_evaluation_mlflow.py", line 73, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\models\model.py", line 562, in log
+    mlflow.register_model(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_model_registry\fluent.py", line 82, in register_model
+    create_version_response = client.create_model_version(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\client.py", line 2302, in create_model_version
+    return self._get_registry_client().create_model_version(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\tracking\_model_registry\client.py", line 192, in create_model_version
+    mv = self.store.create_model_version(name, source, run_id, tags, run_link, description)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\store\model_registry\rest_store.py", line 223, in create_model_version
+    response_proto = self._call_endpoint(CreateModelVersion, req_body)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\store\model_registry\base_rest_store.py", line 42, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 278, in call_endpoint
+    response = http_request(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\mlflow\utils\rest_utils.py", line 185, in http_request
+    raise MlflowException(f"API request to {url} failed with exception {e}")
+mlflow.exceptions.MlflowException: API request to https://dagshub.com/afnanm25/Kindy-disease-Classification.mlflow /api/2.0/mlflow/model-versions/create failed with exception HTTPSConnectionPool(host='dagshub.com', port=443): Max retries exceeded with url: /afnanm25/Kindy-disease-Classification.mlflow%20/api/2.0/mlflow/model-versions/create (Caused by ResponseError('too many 500 error responses'))
+[2026-10-15 09:03:51,812: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:03:51,812: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:05:12,759: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:05:12] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:05:12,811: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:05:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-10-15 09:26:52,451: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:26:52] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:26:53,079: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:26:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-10-15 09:27:13,073: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:27:13] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:27:13,104: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:27:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-10-15 09:28:32,099: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:28:32] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:28:36,748: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:28:36] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:28:37,850: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:28:37] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:31:48,639: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:31:48] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:31:51,140: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:31:51] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:36:09,718: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:36:09] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:36:11,067: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:36:11] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:41:36,037: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:41:36,037: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:42:05,707: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:42:05] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:45:14,913: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:45:14,913: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:45:17,478: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:45:17] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:46:03,885: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2026-10-15 09:46:03,982: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:46:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-15 09:52:44,084: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:52:44,084: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:52:48,189: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:52:48] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:52:55,521: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("training", "model.h5"))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at training\model.h5
+[2026-10-15 09:52:55,521: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:52:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-15 09:56:02,034: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:56:02,034: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:56:54,324: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:56:54] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:57:04,349: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    BASE_DIR = Path(__file__).resolve().parents[3]
+NameError: name 'Path' is not defined
+[2026-10-15 09:57:04,349: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:57:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-15 09:57:53,574: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 09:57:53,574: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 09:59:12,797: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:59:12] "GET / HTTP/1.1" 200 -]
+[2026-10-15 09:59:20,200: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\prediction.py", line 20, in predict
+    model = load_model(str(MODEL_PATH))
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\Sky Code\.conda\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at D:\ThirdYear\ImageProcessing\Kindy-disease-Classification\training\model.h5
+[2026-10-15 09:59:20,200: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:59:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
