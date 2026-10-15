@@ -996,3 +996,10 @@ Traceback (most recent call last):
     raise IOError(
 OSError: No file or directory found at D:\ThirdYear\ImageProcessing\Kindy-disease-Classification\training\model.h5
 [2026-10-15 09:59:20,200: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 09:59:20] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-10-15 10:04:03,486: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.105:8080]
+[2026-10-15 10:04:03,486: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-10-15 10:04:05,847: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 10:04:05] "GET / HTTP/1.1" 200 -]
+[2026-10-15 10:04:12,069: INFO: _internal: 127.0.0.1 - - [15/Oct/2026 10:04:12] "POST /predict HTTP/1.1" 200 -]
