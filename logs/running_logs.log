@@ -399,3 +399,100 @@ Transfer-Encoding: chunked
 [2026-10-14 18:49:02,084: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2026-10-14 20:32:46,151: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 20:32:46,165: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 20:32:46,173: INFO: common: created directory at: artifacts]
+[2026-10-14 20:47:56,203: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 20:47:56,212: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 20:47:56,212: INFO: common: created directory at: artifacts]
+[2026-10-14 20:47:56,218: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-14 20:52:04,932: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-14 22:00:12,377: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 22:00:12,384: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 22:00:12,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 22:00:12,393: INFO: common: created directory at: artifacts]
+[2026-10-14 22:00:12,394: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 22:00:12,395: ERROR: main: "'ConfigBox' object has no attribute 'unzip_dir'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'unzip_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'unzip_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 16, in <module>
+    data_ingestion.main()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "d:\thirdyear\imageprocessing\kindy-disease-classification\src\cnnClassifier\config\configuration.py", line 30, in get_data_ingestion_config
+    unzip_dir=config.unzip_dir
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'unzip_dir'"
+[2026-10-14 22:09:55,897: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-10-14 22:09:55,911: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 22:09:55,911: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 22:09:55,911: INFO: common: created directory at: artifacts]
+[2026-10-14 22:09:55,911: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-14 22:09:55,911: INFO: data_ingestion: File already exists of size: ~ 56361 KB]
+[2026-10-14 22:09:57,102: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-10-14 22:09:57,102: INFO: main: *******************]
+[2026-10-14 22:09:57,117: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-10-14 22:09:57,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 22:09:57,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 22:09:57,117: INFO: common: created directory at: artifacts]
+[2026-10-14 22:09:57,133: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-14 22:09:58,069: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-14 22:09:58,543: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-10-14 22:09:58,543: INFO: main: *******************]
+[2026-10-14 22:09:58,543: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-10-14 22:09:58,556: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-14 22:09:58,556: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-14 22:09:58,556: INFO: common: created directory at: artifacts]
+[2026-10-14 22:09:58,556: INFO: common: created directory at: artifacts\training]
+[2026-10-14 22:13:11,690: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
